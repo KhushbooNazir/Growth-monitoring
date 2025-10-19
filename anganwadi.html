@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Growth Checker (0–6 Years)</title>
+  <link rel="stylesheet" href="anganwadi.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Child Growth Checker</h2>
+    <p>Enter child’s age and gender to get normal height & weight (0–6 years).</p>
+
+    <input type="number" id="years" placeholder="Years (0–6)" min="0" max="6">
+    <input type="number" id="months" placeholder="Additional Months (0–11)" min="0" max="11">
+
+    <select id="gender">
+      <option value="male">Male (Boy)</option>
+      <option value="female">Female (Girl)</option>
+    </select>
+
+    <button onclick="checkGrowth()">Check Growth</button>
+
+    <div class="result" id="result"></div>
+    <footer>Based on WHO Growth Standards (used by ICDS/Anganwadi)</footer>
+  </div>
+
+  <script src="anganwadi.js"></script>
+</body>
+</html>
